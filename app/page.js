@@ -1,4 +1,5 @@
 "use client";
+import { Box } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -46,9 +47,18 @@ export default function Home() {
           ];
         });
 
-        return reader.read().then(processText)
+        return reader.read().then(processText);
       });
     });
   };
-  return <></>;
+  return (
+    <Box
+      width="100vw"
+      height="100vh"
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+    ></Box>
+  );
 }
