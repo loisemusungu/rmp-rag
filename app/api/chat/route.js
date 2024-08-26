@@ -101,5 +101,7 @@ export async function POST(req) {
         controller.close();
       }
     },
-  });
+  })
+
+  return new NextResponse(stream)
 }
