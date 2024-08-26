@@ -45,6 +45,8 @@ export default function Home() {
             { ...lastMessage, content: lastMessage.content + text },
           ];
         });
+
+        return reader.read().then(processText)
       });
     });
   };
