@@ -1,0 +1,124 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. Sarah Thompson",
+      "subject": "Biology",
+      "stars": 4,
+      "review": "Dr. Thompson's lectures are engaging and her lab sessions are well-organized."
+    },
+    {
+      "professor": "Prof. Michael Chen",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Brilliant teacher who makes complex algorithms understandable. Highly recommended!"
+    },
+    {
+      "professor": "Dr. Emily Rodriguez",
+      "subject": "Psychology",
+      "stars": 3,
+      "review": "Interesting material, but assignments can be unclear at times."
+    },
+    {
+      "professor": "Prof. David Johnson",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Challenging course, but Prof. Johnson is always willing to help during office hours."
+    },
+    {
+      "professor": "Dr. Lisa Patel",
+      "subject": "Chemistry",
+      "stars": 5,
+      "review": "Dr. Patel's passion for chemistry is contagious. Her experiments are fascinating!"
+    },
+    {
+      "professor": "Prof. James Wilson",
+      "subject": "History",
+      "stars": 2,
+      "review": "Lectures are often dry and the workload is excessive."
+    },
+    {
+      "professor": "Dr. Maria Garcia",
+      "subject": "Sociology",
+      "stars": 4,
+      "review": "Thought-provoking discussions and relevant case studies. Very insightful."
+    },
+    {
+      "professor": "Prof. Robert Brown",
+      "subject": "Physics",
+      "stars": 3,
+      "review": "Knowledgeable but sometimes struggles to explain complex concepts clearly."
+    },
+    {
+      "professor": "Dr. Jennifer Lee",
+      "subject": "English Literature",
+      "stars": 5,
+      "review": "Dr. Lee's analysis of classic works is outstanding. She encourages critical thinking."
+    },
+    {
+      "professor": "Prof. Ahmed Hassan",
+      "subject": "Economics",
+      "stars": 4,
+      "review": "Practical approach to economics with real-world examples. Challenging but rewarding."
+    },
+    {
+      "professor": "Dr. Rebecca White",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Passionate about the subject. Field trips to museums greatly enhance the learning experience."
+    },
+    {
+      "professor": "Prof. Thomas Green",
+      "subject": "Political Science",
+      "stars": 3,
+      "review": "Interesting course content, but Prof. Green can sometimes appear biased in discussions."
+    },
+    {
+      "professor": "Dr. Laura Martinez",
+      "subject": "Environmental Science",
+      "stars": 4,
+      "review": "Engaging lectures and relevant field work. Dr. Martinez is clearly dedicated to her field."
+    },
+    {
+      "professor": "Prof. Kevin Zhang",
+      "subject": "Electrical Engineering",
+      "stars": 5,
+      "review": "Excellent at explaining complex circuits. Lab sessions are particularly helpful."
+    },
+    {
+      "professor": "Dr. Olivia Clark",
+      "subject": "Philosophy",
+      "stars": 4,
+      "review": "Challenges students to think critically. Discussions can be intense but enlightening."
+    },
+    {
+      "professor": "Prof. Daniel Kim",
+      "subject": "Marketing",
+      "stars": 3,
+      "review": "Good theoretical knowledge, but could use more practical, up-to-date examples."
+    },
+    {
+      "professor": "Dr. Sophia Nguyen",
+      "subject": "Neuroscience",
+      "stars": 5,
+      "review": "Cutting-edge research incorporated into lectures. Dr. Nguyen is an inspiring educator."
+    },
+    {
+      "professor": "Prof. William Taylor",
+      "subject": "Music Theory",
+      "stars": 4,
+      "review": "Patient teacher who breaks down complex musical concepts effectively."
+    },
+    {
+      "professor": "Dr. Emma Scott",
+      "subject": "Genetics",
+      "stars": 5,
+      "review": "Excellent at explaining complex genetic principles. Lab work is particularly enlightening."
+    },
+    {
+      "professor": "Prof. Richard Davis",
+      "subject": "Architecture",
+      "stars": 3,
+      "review": "Knowledgeable about architectural history, but project feedback could be more constructive."
+    }
+  ]
+}
