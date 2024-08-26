@@ -68,6 +68,13 @@ export default function Home() {
         p={2}
         spacing={3}
       >
+        <Stack
+          direction="column"
+          spacing={2}
+          flexGrow={1}
+          overflow={"auto"}
+          maxHeight={"100%"}
+        ></Stack>
         {messages.map((message, index) => {
           <Box
             key={index}
