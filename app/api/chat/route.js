@@ -59,7 +59,8 @@ export async function POST(req) {
     includeMetadata: true,
     vector: embedding.data[0].embedding,
   });
-  let resultString = "Returned results from vector db (done automatically):";
+  let resultString =
+    "\n\nReturned results from vector db (done automatically):";
   results.matches.forEach((match) => {
     resultString += `
     Professor: ${match.id}
@@ -72,4 +73,33 @@ export async function POST(req) {
 
   const lastMessage = data[data.length - 1];
   const lastMessageContent = (lastMessage.content = resultString);
+  const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
+  const completion = await openai.chat.completions.create({
+    messages: [
+      { role: "system", content: systemPrompt },
+      ...lastDataWithoutLastMessage,
+      { role: "user", content: lastMessageContent },
+    ],
+    model: "gpt-4o-mini",
+    stream: true,
+  });
+
+  const stream = ReadableStream({
+    async start(controller) {
+      const encoder = new testEncoder();
+      try {
+        for await (const chunk of completion) {
+          const content = chunk.choices[0]?.delta?.content;
+          if (content) {
+            const text = encoder.encode(content);
+            controller.enqueue(text);
+          }
+        }
+      } catch (err) {
+        controller.error(err);
+      } finally {
+        controller.close();
+      }
+    },
+  });
 }
