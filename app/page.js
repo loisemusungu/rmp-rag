@@ -1,5 +1,5 @@
 "use client";
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -59,6 +59,36 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-    ></Box>
+    >
+      <Stack
+        direction="column"
+        width="500px"
+        height="700px"
+        border="1px solid black"
+        p={2}
+        spacing={3}
+      >
+        {messages.map((message, index) => {
+          <Box
+            key={index}
+            display="flex"
+            justifyContent={
+              message.role === "assistant" ? "flex-start" : "flex-end"
+            }
+            color="white"
+            borderRadius={16}
+            p={3}
+          >
+            <Box
+              bgcolor={
+                message.role === "assistant" ? "primary.main" : "secondary.main"
+              }
+            >
+              {message.content}
+            </Box>
+          </Box>;
+        })}
+      </Stack>
+    </Box>
   );
 }
