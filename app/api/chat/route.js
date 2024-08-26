@@ -59,7 +59,7 @@ export async function POST(req) {
     includeMetadata: true,
     vector: embedding.data[0].embedding,
   });
-  let resultString = "Returned results:";
+  let resultString = "Returned results from vector db (done automatically):";
   results.matches.forEach((match) => {
     resultString += `
     Professor: ${match.id}
@@ -69,4 +69,7 @@ export async function POST(req) {
     \n\n
     `;
   });
+
+  const lastMessage = data[data.length - 1];
+  const lastMessageContent = (lastMessage.content = resultString);
 }
